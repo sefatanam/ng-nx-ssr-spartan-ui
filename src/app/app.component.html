@@ -1,1 +1,37 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="container grid justify-center gap-4">
+    <h1 class="text-center font-semibold text-lg">Spartan UI first look with Accordion</h1>
+    <div class="w-[32rem]">
+        <div hlmAccordion>
+            <div hlmAccordionItem>
+                <button hlmAccordionTrigger>
+                    Is it accessible?
+                    <hlm-icon hlmAccIcon />
+                </button>
+                <brn-accordion-content hlm>Yes. It adheres to the WAI-ARIA design pattern.</brn-accordion-content>
+            </div>
+        
+            <div hlmAccordionItem>
+                <button hlmAccordionTrigger>
+                    Is it styled?
+                    <hlm-icon hlmAccIcon />
+                </button>
+                <brn-accordion-content hlm>
+                    Yes. It comes with default styles that match the other components' aesthetics.
+                </brn-accordion-content>
+            </div>
+        
+            <div hlmAccordionItem>
+                <button hlmAccordionTrigger>
+                    Is it animated?
+                    <hlm-icon hlmAccIcon />
+                </button>
+                <brn-accordion-content hlm>
+                    Yes. It's animated by default, but you can disable it if you prefer.
+                </brn-accordion-content>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<router-outlet></router-outlet>
