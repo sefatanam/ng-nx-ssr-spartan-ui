@@ -22,8 +22,10 @@ import {
   HlmMenuSeparatorComponent,
   HlmMenuShortcutComponent,
   HlmSubMenuComponent,
-} from '@spartan-ng/ui-menu-helm';
-
+  HlmMenuBarModule
+} from '@spartan-ng/ui-menu-helm'; 
+import { BrnSelectImports } from '@spartan-ng/ui-select-brain';
+import { HlmSelectImports } from '@spartan-ng/ui-select-helm';
 @Component({
     standalone: true,
     selector: 'app-root',
@@ -38,7 +40,7 @@ import {
         HlmIconComponent, TablePreviewComponent,
         BrnMenuTriggerDirective,
         BrnContextMenuTriggerDirective,
-    
+        HlmSubMenuComponent,
         HlmMenuComponent,
         HlmSubMenuComponent,
         HlmMenuItemDirective,
@@ -50,11 +52,10 @@ import {
         HlmMenuItemCheckComponent,
         HlmMenuItemRadioComponent,
         HlmMenuGroupComponent,
-    
         HlmButtonDirective,
         HlmIconComponent,
-        HlmMenuItemCheckboxDirective,
-        HlmMenuItemRadioDirective,]
+        HlmMenuItemCheckboxDirective,BrnSelectImports, HlmSelectImports,
+        HlmMenuItemRadioDirective, HlmMenuBarModule]
 })
 export class AppComponent {
   title = 'ng-deep-drive';
